@@ -13,6 +13,10 @@
 
 ![效果截图](screenshot.jpg)
 
+**AI 总结效果：**
+
+![总结示例](summary_sample.jpg)
+
 ## 怎么安装
 
 1. 在 AstrBot 插件市场搜索 `astrbot_plugin_github_summary` 并安装
