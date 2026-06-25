@@ -25,14 +25,46 @@
 
 ### 方式二：手动下载
 
-1. 从本仓库下载插件压缩包或 `git clone`
-2. 将插件文件夹放入 AstrBot 的 `data/plugins/` 目录
-3. 安装依赖：
+1. **下载插件**：从本仓库下载 ZIP 或 `git clone`
+2. **放入插件目录**：将文件夹放入 AstrBot 的 `data/plugins/` 下，确保目录结构为：
+   ```
+   data/plugins/astrbot_plugin_github_summary/
+   ├── main.py
+   ├── metadata.yaml
+   ├── requirements.txt
+   └── _conf_schema.json
+   ```
+3. **检查 Python 版本**：
+   ```bash
+   python --version
+   ```
+   需 >= 3.8。推荐 3.10+。
+
+4. **安装 Python 依赖**：
    ```bash
    pip install -r requirements.txt
+   ```
+   如报权限错误，加 `--user`：
+   ```bash
+   pip install --user -r requirements.txt
+   ```
+
+5. **安装 Chromium 浏览器**：
+   ```bash
    playwright install chromium
    ```
-4. 重启 AstrBot，在 WebUI 插件管理页启用即可
+   > Windows 一般直接成功。Linux 如报缺少系统库，先执行：
+   > ```bash
+   > playwright install-deps chromium
+   > ```
+
+6. **验证安装**：在 AstrBot 根目录执行：
+   ```bash
+   python -c "from playwright.sync_api import sync_playwright; print('OK')"
+   ```
+   输出 `OK` 表示依赖就绪。
+
+7. **重启 AstrBot**，在 WebUI 插件管理页启用即可
 
 ### 公共步骤
 
