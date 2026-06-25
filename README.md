@@ -42,10 +42,11 @@
 
 | 依赖 | 说明 |
 |------|------|
+| Python >= 3.8 | 运行环境 |
+| AstrBot 框架 | 插件运行平台 |
 | `playwright >= 1.40.0` | 网页截图引擎 |
 | Chromium 浏览器 | 由 `playwright install chromium` 安装 |
 | `aiohttp >= 3.9.0` | 异步 HTTP 请求 |
-| AstrBot 框架 | 插件运行平台 |
 
 ## 怎么使用
 
