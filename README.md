@@ -19,12 +19,24 @@
 
 ## 怎么安装
 
-1. 在 AstrBot 插件市场搜索 `astrbot_plugin_github_summary` 并安装
-2. 安装 Playwright 浏览器：
+### 方式一：插件市场安装
+
+在 AstrBot 插件市场搜索 `astrbot_plugin_github_summary` 并安装。
+
+### 方式二：手动下载
+
+1. 从本仓库下载插件压缩包或 `git clone`
+2. 将插件文件夹放入 AstrBot 的 `data/plugins/` 目录
+3. 安装依赖：
    ```bash
+   pip install -r requirements.txt
    playwright install chromium
    ```
-3. （可选）在插件配置中填入 GitHub Token，提高 API 频率限制
+4. 重启 AstrBot，在 WebUI 插件管理页启用即可
+
+### 公共步骤
+
+（可选）在插件配置中填入 GitHub Token，提高 API 频率限制。
 
 ## 依赖
 
