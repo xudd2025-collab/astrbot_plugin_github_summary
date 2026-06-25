@@ -4,5 +4,23 @@
         "type": "string",
         "default": "",
         "hint": "填了能提高 API 调用频率限制，不填也能用"
+    },
+    "ai_api_url": {
+        "description": "AI API 地址",
+        "type": "string",
+        "default": "https://api.deepseek.com/v1",
+        "hint": "用于 AI 总结 README，支持 OpenAI 兼容接口"
+    },
+    "ai_api_key": {
+        "description": "AI API Key",
+        "type": "string",
+        "default": "",
+        "hint": "必填，否则 AI 总结功能无法使用"
+    },
+    "ai_model": {
+        "description": "AI 模型名称",
+        "type": "string",
+        "default": "deepseek-chat",
+        "hint": "推荐 deepseek-chat，便宜又好用"
     }
 }

@@ -68,7 +68,10 @@
 
 ### 公共步骤
 
-（可选）在插件配置中填入 GitHub Token，提高 API 频率限制。
+在 WebUI 插件配置页填写：
+
+- **`ai_api_key`**（必填）：AI API 密钥，否则 AI 总结无法工作。推荐用 DeepSeek，注册即送额度。
+- **`github_token`**（可选）：提高 GitHub API 频率限制。
 
 ## 依赖
 
@@ -76,6 +79,7 @@
 |------|------|
 | Python >= 3.8 | 运行环境 |
 | AstrBot 框架 | 插件运行平台 |
+| AI API（DeepSeek / OpenAI 兼容） | AI 总结 README 必需 |
 | `playwright >= 1.40.0` | 网页截图引擎 |
 | Chromium 浏览器 | 由 `playwright install chromium` 安装 |
 | `aiohttp >= 3.9.0` | 异步 HTTP 请求 |
@@ -95,7 +99,10 @@
 
 | 配置项 | 说明 | 默认值 |
 |--------|------|--------|
-| `github_token` | GitHub Personal Access Token（可选，提高频率限制） | 空 |
+| `ai_api_url` | AI API 地址，支持 OpenAI 兼容接口 | `https://api.deepseek.com/v1` |
+| `ai_api_key` | AI API 密钥（**必填**，否则总结不可用） | 空 |
+| `ai_model` | AI 模型名称 | `deepseek-chat` |
+| `github_token` | GitHub Personal Access Token（可选） | 空 |
 
 ## 作者
 
