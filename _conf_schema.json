@@ -1,0 +1,8 @@
+{
+    "github_token": {
+        "description": "GitHub Personal Access Token（可选）",
+        "type": "string",
+        "default": "",
+        "hint": "填了能提高 API 调用频率限制，不填也能用"
+    }
+}

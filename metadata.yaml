@@ -1,0 +1,5 @@
+name: astrbot_plugin_github_summary
+desc: 群内 GitHub 链接自动解析：手机模式截图 README，AI 智能总结，合并转发一条消息发出来。
+author: 橙猫猫
+version: 1.0.0
+homepage: https://github.com/xudd2025-collab/astrbot_plugin_github_summary
